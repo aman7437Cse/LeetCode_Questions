@@ -5,12 +5,12 @@ public:
         int o=x;
         if(x < 0)
             return false;
-        while(x>0){
-         rev=rev*10+x%10;
-        x=x/10;
+        while(o>0){
+         rev=rev*10+o%10;
+        o=o/10;
         }
         
-        return o==rev;
+        return x==rev;
         
     }
 };
